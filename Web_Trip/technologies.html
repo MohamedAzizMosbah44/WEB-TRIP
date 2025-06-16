@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="icon" href="logo.PNG" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+	<header>
+        <h1>Technologies</h1>
+		<div class="menu-toggle"></div>
+        <nav class="menu">
+        <ul>
+			<li><a href="web.html">Accueil</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="#contact">Contact</a></li>
+			<button id="theme-toggle">Basculer en Mode Sombre</button>
+        </ul>
+		</nav>
+    </header>
+	<p class="presentation"> Cette partie est didiée à présenter les technologies utilisees pour fabriquer notre site web. 
+	Dans cette page, nous avons utilisé des technologies avancées qui ont permis de concevoir et de construire ce site web de manière efficace et performante. 
+	Ces outils et langages de programmation nous ont offert la flexibilité nécessaire pour créer une interface conviviale et un design responsive, 
+	tout en assurant une expérience utilisateur fluide.</p>
+	<div class="container">
+        <div class="technology">
+            <h3>HTML</h3>
+            <p>Langage de base pour créer des pages web. Il permet de structurer le contenu avec des balises.</p>
+        </div>
+        <div class="technology">
+            <h3>CSS</h3>
+            <p>Langage utilisé pour styliser les pages web. Il permet de contrôler la mise en page, les couleurs, les polices, etc.</p>
+        </div>
+        <div class="technology">
+            <h3>JavaScript</h3>
+            <p>Langage de programmation utilisé pour ajouter de l'interactivité aux sites web.</p>
+        </div>
+        <div class="technology">
+            <h3>PHP</h3>
+            <p>Langage de script côté serveur utilisé pour le développement web, permettant de générer du contenu dynamique.</p>
+        </div>
+        <div class="technology">
+            <h3>GSAP</h3>
+            <p>Bibliothèque JavaScript pour créer des animations web hautes performances.</p>
+        </div>
+        <div class="technology">
+            <h3>WAMPServer</h3>
+            <p>Environnement de développement local pour Windows qui inclut Apache, MySQL et PHP.</p>
+        </div>
+    </div>
+	<p>Pour plus d'informations sur les languages de programmation, nous vous invitions à en apprendre plus <a href="languages.html">ici</a>.</p>
+	<section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form" method="get" action="contact.php">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    </section>
+	    <footer>
+        <p>&copy; 2025 Voyage en Développement Web</p>
+    </footer>
+
+    <script src="web.js"></script>
+</body>
+</html>

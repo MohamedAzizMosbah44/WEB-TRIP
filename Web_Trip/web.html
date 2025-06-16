@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Trip</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="icon" href="logo.PNG" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Web Trip</h1>
+        <div class="menu-toggle"></div>
+		<nav class="menu">
+        <ul>
+			<li><a href="web.html">Accueil</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="#contact">Contact</a></li>
+			<button id="theme-toggle">Basculer en Mode Sombre</button>
+        </ul>
+		</nav>
+    </header>
+	<div id="dynamic-content"></div>
+    <section>
+        <h2>À Propos</h2>
+        <p>Bonjour et bienvenue sur notre site web dédié au développement web ! Je m'appelle Mohamed Aziz Mosbah,et mon camarade est Nathan Nkenzi. Nous sommes passionnés par la création de sites web interactifs et dynamiques. Ce site est le fruit de notre apprentissage et de notre passion pour le développement web.</p>
+    </section>
+
+    <section>
+        <h2>Objectif du Site</h2>
+        <p>L'objectif principal de ce site est de faire une sorte de voyage dans les notions fondamentales du developement web. Que vous soyez un étudiant, un professionnel ou simplement curieux, on espère que vous trouverez ici des informations et des inspirations utiles.</p>
+    </section>
+
+    <section>
+        <h2>Explorez le Site</h2>
+        <div class="project">
+            <h3><a href="technologies.html">Technologies :</a></h3>
+            <p>Découvrez les technologies utilisées pour construire ce site, y compris HTML, CSS, JavaScript, et PHP.</p>
+        </div>
+        <div class="project">
+            <h3><a href="portfolio.html">Portfolio :</a></h3>
+            <p>Parcourez mes projets et découvrez comment j'applique mes compétences en développement web.</p>
+        </div>
+	<div class="project">
+            <h3><a href="languages.html">Languages</a></h3>
+            <p>Lisez des articles et des tutoriels sur divers sujets liés au développement web.</p>
+        </div>
+	<div class="project">
+            <h3><a href="#contact">Contact :</a></h3>
+            <p>Vous avez des questions ou des commentaires ? N'hésitez pas à nous contacter via le formulaire de contact.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Remerciements</h2>
+            <p>Merci de visiter mon site web. Nous espèrons que vous apprécierez votre visite et trouverez les informations que vous cherchez. N'hésitez pas à revenir régulièrement, car nous mettons constamment à jour le contenu avec de nouvelles informations et projets.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form" method="get" action="contact.php">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Voyage en Développement Web</p>
+    </footer>
+
+    <script src="web.js"></script>
+</body>
+</html>

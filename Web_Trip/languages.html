@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="icon" href="logo.PNG" type="image/x-icon">
+    <style>
+        .container {
+            padding: 20px;
+        }
+        .blog-post {
+            background: var(--box-background);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+			color: var(--box-text-color);
+        }
+		:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+	--box-background: #f9f9f9;
+    --box-text-color: #333333;
+	--color: #555;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+	--box-background: #1e1e1e;
+    --box-text-color: #e0e0e0;
+	--color: #ffffff;
+}
+blog-post h2 {
+            margin-top: 0;
+        }
+        .blog-post p {
+            color: var(--color);
+        }
+        .blog-post a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+	<header>
+        <h1>Languages</h1>
+		<div class="menu-toggle"></div>
+        <nav class="menu">
+        <ul>
+			<li><a href="web.html">Accueil</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="#contact">Contact</a></li>
+			<button id="theme-toggle">Basculer en Mode Sombre</button>
+        </ul>
+		</nav>
+    </header>
+	<div class="container">
+        <div class="blog-post">
+            <h2>Les Bases de HTML</h2>
+            <p>Introduction aux balises HTML de base et à leur utilisation. Découvrez comment structurer votre contenu web efficacement.</p>
+            <a href="https://www.w3schools.com/html/default.asp">Lire la suite →</a>
+        </div>
+        <div class="blog-post">
+            <h2>Comment Styliser une Page Web avec CSS</h2>
+            <p>Guide pour utiliser CSS afin de rendre une page web attrayante. Apprenez à contrôler la mise en page, les couleurs et les polices.</p>
+            <a href="https://www.w3schools.com/css/default.asp">Lire la suite →</a>
+        </div>
+        <div class="blog-post">
+            <h2>Ajouter de l'Interactivité avec JavaScript</h2>
+            <p>Explorez comment JavaScript peut ajouter de l'interactivité à vos pages web. Découvrez des exemples pratiques et des conseils.</p>
+            <a href="https://www.w3schools.com/js/default.asp">Lire la suite →</a>
+        </div>
+        <div class="blog-post">
+            <h2>Introduction à PHP pour les Débutants</h2>
+            <p>Découvrez les bases de PHP et comment l'utiliser pour créer des pages web dynamiques. Parfait pour ceux qui débutent en développement backend.</p>
+            <a href="https://www.w3schools.com/php/default.asp">Lire la suite →</a>
+        </div>
+    </div>
+	
+	<section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form" method="get" action="contact.php">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+	    <footer>
+        <p>&copy; 2025 Voyage en Développement Web</p>
+    </footer>
+
+    <script src="web.js"></script>
+</body>
+</html>
