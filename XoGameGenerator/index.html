@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-gamepad"></i> Tic Tac Toe</h1>
+        
+        <!-- Symbol Choice Modal -->
+        <div id="symbolModal" class="modal">
+            <div class="modal-content">
+                <h2>Choisissez votre symbole</h2>
+                <div class="symbol-choice">
+                    <label>
+                        <input type="radio" name="symbol" value="X" checked>
+                        <span class="symbol-button">X</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="symbol" value="O">
+                        <span class="symbol-button">O</span>
+                    </label>
+                </div>
+                <button id="confirmSymbol" class="btn btn-primary">OK</button>
+            </div>
+        </div>
+
+        <!-- Difficulty Selection -->
+        <div class="difficulty-section">
+            <h3>Choisissez la difficulté:</h3>
+            <div class="difficulty-options">
+                <label>
+                    <input type="radio" name="difficulty" value="Facile" checked>
+                    <span class="difficulty-button">Facile</span>
+                </label>
+                <label>
+                    <input type="radio" name="difficulty" value="Moyen">
+                    <span class="difficulty-button">Moyen</span>
+                </label>
+                <label>
+                    <input type="radio" name="difficulty" value="Difficile">
+                    <span class="difficulty-button">Difficile</span>
+                </label>
+                <label>
+                    <input type="radio" name="difficulty" value="Extrême">
+                    <span class="difficulty-button">Extrême</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Game Board -->
+        <div class="game-board">
+            <div class="grid">
+                <button class="cell" data-row="0" data-col="0"></button>
+                <button class="cell" data-row="0" data-col="1"></button>
+                <button class="cell" data-row="0" data-col="2"></button>
+                <button class="cell" data-row="1" data-col="0"></button>
+                <button class="cell" data-row="1" data-col="1"></button>
+                <button class="cell" data-row="1" data-col="2"></button>
+                <button class="cell" data-row="2" data-col="0"></button>
+                <button class="cell" data-row="2" data-col="1"></button>
+                <button class="cell" data-row="2" data-col="2"></button>
+            </div>
+        </div>
+
+        <!-- Game Controls -->
+        <div class="controls">
+            <button id="restartGame" class="btn btn-secondary">
+                <i class="fas fa-redo"></i> Rejouer
+            </button>
+        </div>
+
+        <!-- Game Status -->
+        <div id="gameStatus" class="game-status"></div>
+    </div>
+
+    <!-- Message Modal -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <h2 id="messageTitle">Message</h2>
+            <p id="messageText"></p>
+            <button id="closeMessage" class="btn btn-primary">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+🎮 TIC TAC TOE - FICHIER .EXE CRÉÉ
+=====================================
+
+Votre jeu Tic Tac Toe a été converti en fichier .exe !
+
+📁 FICHIERS CRÉÉS:
+- dist/TicTacToe.exe (3,280 bytes)
+- dist/TicTacToe.bat (3,280 bytes)
+
+🚀 COMMENT UTILISER:
+
+Sur Windows:
+1. Double-cliquez sur "TicTacToe.exe" 
+2. Le jeu va se lancer automatiquement
+
+Alternative:
+- Double-cliquez sur "TicTacToe.bat" si le .exe ne fonctionne pas
+
+📋 PRÉREQUIS:
+- Python doit être installé sur l'ordinateur Windows
+- Si Python n'est pas installé, le fichier affichera un message avec les instructions
+
+🎯 FONCTIONNALITÉS DU JEU:
+- Choix du symbole (X ou O) au début
+- 4 niveaux de difficulté:
+  * Facile: IA aléatoire
+  * Moyen: IA mixte
+  * Difficile: IA intelligente
+  * Extrême: IA très difficile
+- Interface graphique complète
+- Bouton pour rejouer
+
+📦 DISTRIBUTION:
+Ces fichiers .exe peuvent être copiés sur n'importe quel PC Windows et fonctionneront directement.
+
+💡 NOTES:
+- Taille très compacte (seulement 3 KB)
+- Pas besoin d'installation
+- Code du jeu intégré dans le fichier
